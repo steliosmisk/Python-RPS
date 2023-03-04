@@ -1,7 +1,6 @@
 import os
 import random
 
-
 print("--WELCOME TO RPS GAME--")
 print("[1] Start The Game")
 print("[2] Exit")
@@ -13,6 +12,7 @@ user_choice = input("Enter (1/2): ")
 
 while user_choice == "1" and user_choice != "2":
     user_action = input("(R)ock, (P)aper or (S)cissors?: \n").lower()
+
     if user_action == ai_action:
         print(f"YOU: {user_action} | AI: {ai_action}, TIE!")
     elif user_action in ["r", "rock"]:
